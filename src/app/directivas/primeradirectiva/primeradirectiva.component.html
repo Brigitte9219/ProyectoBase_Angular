@@ -36,3 +36,16 @@
   {{pais}}
   </li>
 </ol>
+
+<ol>
+  <li *ngFor="let pais of Lista">
+    <div *ngIf="pais =='Chile'"> {{pais}} </div>
+  </li>
+</ol>
+
+<div [ngSwitch]="Edad">
+  <div *ngSwitchCase="10">Tu edad es 10</div>
+  <div *ngSwitchCase="20">Tu edad es 20</div>
+  <div *ngSwitchCase="30">Tu edad es 30</div>
+  <div *ngSwitchDefault="">Tu edad es otra</div>
+</div>

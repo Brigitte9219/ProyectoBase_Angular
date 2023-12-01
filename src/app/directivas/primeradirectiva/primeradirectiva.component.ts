@@ -10,4 +10,6 @@ export class PrimeradirectivaComponent {
   border: boolean=true;
 
   Lista: Array<string>=['Argentina', 'Brasil', 'Chile', 'Colombia', 'España', 'Mexico', 'Japon']
+
+  Edad: number=10;
 }
