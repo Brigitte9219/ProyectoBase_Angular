@@ -13,5 +13,5 @@ export class PrimeradirectivaComponent {
 
   Edad: number=10;
 
-  Fecha: Date= new Date();
+  Fecha: Date = new Date();
 }
