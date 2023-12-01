@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./primeradirectiva.component.css']
 })
 export class PrimeradirectivaComponent {
+  color : boolean = true;
+  border: boolean=true;
 
+  Lista: Array<string>=['Argentina', 'Brasil', 'Chile', 'Colombia', 'España', 'Mexico', 'Japon']
 }

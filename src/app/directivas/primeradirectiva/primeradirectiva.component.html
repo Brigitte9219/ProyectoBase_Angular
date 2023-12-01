@@ -2,9 +2,37 @@
 <h3>Directivas de Atributos</h3>
 
 
-<p [ngClass]="">
+<p [ngClass]="color == true ? 'text-1' : 'text-2'">
   Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
   Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
   cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una
   galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
 </p>
+
+<p [ngClass]="color == false ? 'text-1' : 'text-2'">
+  Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+  Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+  cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una
+  galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+</p>
+
+<p [style.border]="border == true ? '2px solid black' : '2px solid blue'">
+  Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+  Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+  cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una
+  galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+</p>
+
+<p [style.border]="border == false ? '2px solid black' : '2px solid blue'">
+  Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+  Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500,
+  cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una
+  galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
+</p>
+<h3>Directivas Estructurales</h3>
+
+<ol>
+  <li *ngFor="let pais of Lista">
+  {{pais}}
+  </li>
+</ol>
