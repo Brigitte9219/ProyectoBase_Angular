@@ -1,5 +1,5 @@
-<h2>Directivas</h2>
-<h3>Directivas de Atributos</h3>
+<h1>Directivas</h1>
+<h2>Directivas de Atributos</h2>
 
 
 <p [ngClass]="color == true ? 'text-1' : 'text-2'">
@@ -29,23 +29,31 @@
   cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una
   galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
 </p>
-<h3>Directivas Estructurales</h3>
+<h2>Directivas Estructurales</h2>
 
+<h3>*ngFor</h3>
 <ol>
   <li *ngFor="let pais of Lista">
   {{pais}}
   </li>
 </ol>
 
+<h3>*ngFor anidado *ngIf</h3>
 <ol>
   <li *ngFor="let pais of Lista">
     <div *ngIf="pais =='Chile'"> {{pais}} </div>
   </li>
 </ol>
 
+<h3>ngSwitch y *ngSwitchCase</h3>
 <div [ngSwitch]="Edad">
   <div *ngSwitchCase="10">Tu edad es 10</div>
   <div *ngSwitchCase="20">Tu edad es 20</div>
   <div *ngSwitchCase="30">Tu edad es 30</div>
   <div *ngSwitchDefault="">Tu edad es otra</div>
 </div>
+
+<h2>Pipes</h2>
+<p> {{Fecha}} </p>
+<p> {{Fecha| date}} </p>
+<p> {{Fecha| date: 'dd/mm/yy'}} </p>

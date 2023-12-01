@@ -12,4 +12,6 @@ export class PrimeradirectivaComponent {
   Lista: Array<string>=['Argentina', 'Brasil', 'Chile', 'Colombia', 'España', 'Mexico', 'Japon']
 
   Edad: number=10;
+
+  Fecha: Date= new Date();
 }
